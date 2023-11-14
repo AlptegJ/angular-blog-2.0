@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let blogpost of blogposts" class="blog-post">
+    <h3>{{ blogpost.title }}</h3>
+    <img
+      alt="{{ blogpost.thumbnailUrl }}"
+      src="././assets/images/{{ blogpost.thumbnailUrl }}.png"
+    />
+    <p>{{ blogpost.creationDate | date : "mediumDate" }}</p>
+    <button [routerLink]="['/singlepost', blogpost.id]">Read more...</button>
+  </li>
+</ul>

@@ -1,0 +1,16 @@
+<h3>{{ post.title }}</h3>
+<img
+  alt="{{ post.thumbnailUrl }}"
+  src="././assets/images/{{ post.thumbnailUrl }}.png"
+/>
+
+<p>{{ post.body }}</p>
+<p>{{ post.creationDate | date : "mediumDate" }}</p>
+
+<span>
+  <div (click)="like()">likes: {{ post.likes }}</div>
+  <div>score: {{ score }}</div>
+  <div (click)="dislike()">dislikes: {{ post.dislikes }}</div>
+</span>
+
+<button routerLink="">back to main!</button>
