@@ -31,16 +31,25 @@ export class BlogpostService {
     comments: string[],
     id: number
   ) {
-    this.PostList = this.allBlogposts;
-    this.newPost.title = title;
-    this.newPost.body = body;
-    this.newPost.thumbnailUrl = thumbnailUrl;
-    this.newPost.creationDate = creationDate;
-    this.newPost.likes = likes;
-    this.newPost.dislikes = dislikes;
-    this.newPost.comments = comments;
-    this.newPost.id = id;
-    this.PostList.push(this.newPost);
-    console.log(this.newPost);
+    // this.PostList = this.allBlogposts;
+    // this.newPost.title = title;
+    // this.newPost.body = body;
+    // this.newPost.thumbnailUrl = thumbnailUrl;
+    // this.newPost.creationDate = creationDate;
+    // this.newPost.likes = likes;
+    // this.newPost.dislikes = dislikes;
+    // this.newPost.comments = comments;
+    // this.newPost.id = id;
+    // this.PostList.push(this.newPost);
+    console.log(
+      title,
+      body,
+      thumbnailUrl,
+      creationDate,
+      likes,
+      dislikes,
+      comments,
+      id
+    );
   }
 }
