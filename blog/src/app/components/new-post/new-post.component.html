@@ -1,0 +1,15 @@
+<section>
+  <h1>create a new post</h1>
+  <form [formGroup]="newPostForm" (submit)="submitPost()">
+    <label for="title">Title</label>
+    <input id="title" type="text" formControlName="title" />
+
+    <label for="thumbnailUrl">thumbnailUrl</label>
+    <input id="thumbnailUrl" type="text" formControlName="thumbnailUrl" />
+
+    <label for="body">body</label>
+    <input id="body" type="text" formControlName="body" />
+
+    <button type="submit">Create Post</button>
+  </form>
+</section>

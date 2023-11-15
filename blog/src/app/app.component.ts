@@ -12,6 +12,6 @@ export class AppComponent {
   constructor(private storageService: StorageService) {}
 
   ngOnInit() {
-    this.storageService.setData('1', Blogposts);
+    this.storageService.setData('postKey', Blogposts);
   }
 }

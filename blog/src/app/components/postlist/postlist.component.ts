@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BlogpostService } from 'src/app/services/blogpost.service';
 import { Blogpost } from 'src/blog-interface';
+import { Blogposts } from 'src/blogpost-data';
 
 @Component({
   selector: 'app-postlist',
@@ -8,7 +9,17 @@ import { Blogpost } from 'src/blog-interface';
   styleUrls: ['./postlist.component.css'],
 })
 export class PostlistComponent {
-  constructor(private blogpostService: BlogpostService) {}
+  blogposts: Blogpost[] = [];
 
-  blogposts: Blogpost[] = this.blogpostService.allBlogposts;
+  constructor(private blogpostService: BlogpostService) {
+    if (this.blogpostService.getAllBlogposts('postKey')) {
+      this.blogposts = this.blogpostService.getAllBlogposts('postKey');
+    } else {
+      this.blogposts = Blogposts;
+    }
+  }
+
+  toString(key: number): string {
+    return JSON.stringify(key);
+  }
 }

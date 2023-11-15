@@ -2,4 +2,9 @@
   <button type="button" routerLink="">Huvudsidan</button>
   <button type="button" routerLink="/about">omMig</button>
   <button type="button">byt Användare</button>
+  <button type="button" (click)="get()">log getdata</button>
+
+  <button *ngIf="user === 'admin'" type="button" routerLink="/new-post">
+    skapa nytt inlägg
+  </button>
 </nav>

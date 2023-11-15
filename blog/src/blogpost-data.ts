@@ -8,7 +8,7 @@ export const Blogposts: Blogpost[] = [
     creationDate: new Date('January 3, 2020 02:45:30'),
     likes: 0,
     dislikes: 0,
-    comments: [],
+    comments: ['what a time to be alive'],
     id: 1,
   },
   {

@@ -6,6 +6,8 @@
       src="././assets/images/{{ blogpost.thumbnailUrl }}.png"
     />
     <p>{{ blogpost.creationDate | date : "mediumDate" }}</p>
-    <button [routerLink]="['/singlepost', blogpost.id]">Read more...</button>
+    <button [routerLink]="['/singlepost', blogpost.id]">
+      Read more... {{ blogpost.id }}
+    </button>
   </li>
 </ul>

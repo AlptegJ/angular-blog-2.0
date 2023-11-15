@@ -11,4 +11,10 @@ export class StorageService {
   setData(key: string, data: Blogpost[]): void {
     localStorage.setItem(key, JSON.stringify(data));
   }
+
+  // get data from localStorage, if there is data return it or return null.
+  getData(key: string): Blogpost[] {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : null;
+  }
 }

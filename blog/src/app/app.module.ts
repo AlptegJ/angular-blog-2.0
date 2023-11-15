@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,9 @@ import { AboutViewComponent } from './view/about-view/about-view.component';
 import { ContactViewComponent } from './view/contact-view/contact-view.component';
 import { MainViewComponent } from './view/main-view/main-view.component';
 import { SinglePostViewComponent } from './view/single-post-view/single-post-view.component';
+import { CommentComponent } from './components/comment/comment.component';
+import { NewPostComponent } from './components/new-post/new-post.component';
+import { NewPostViewComponent } from './view/new-post-view/new-post-view.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +34,11 @@ import { SinglePostViewComponent } from './view/single-post-view/single-post-vie
     ContactViewComponent,
     MainViewComponent,
     SinglePostViewComponent,
+    CommentComponent,
+    NewPostComponent,
+    NewPostViewComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
