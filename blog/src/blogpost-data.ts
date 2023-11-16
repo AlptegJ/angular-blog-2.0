@@ -4,7 +4,7 @@ export const Blogposts: Blogpost[] = [
   {
     title: 'Velvet Echoes - "Whispers in the Abyss"',
     thumbnailUrl: 'blogPic1',
-    body: '11',
+    body: "`Whispers in the Abyss by Velvet Echoes is a mesmerizing journey into the depths of indie rock, where haunting melodies and introspective lyrics intertwine seamlessly. The album's ethereal soundscapes, coupled with the lead singer's evocative vocals, create an atmosphere that is both melancholic and uplifting. Tracks like 'Lost Horizons' and 'Fading Echoes' showcase the band's ability to craft intricate musical arrangements that linger in the listener's mind. The album's lyrical themes delve into the complexities of human emotions, exploring the subtle nuances of love, loss, and self-discovery. Velvet Echoes succeeds in delivering a debut album that not only captivates with its sonic beauty but also resonates on a profound emotional level.",
     creationDate: new Date('January 3, 2020 02:45:30'),
     likes: 0,
     dislikes: 0,

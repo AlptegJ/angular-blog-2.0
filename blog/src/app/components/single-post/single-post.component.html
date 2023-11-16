@@ -1,18 +1,31 @@
-<h3>{{ post.title }}</h3>
-<img
-  alt="{{ post.thumbnailUrl }}"
-  src="././assets/images/{{ post.thumbnailUrl }}.png"
-/>
+<section class="flex flex-col items-center gap-2">
+  <div class="flex flex-col justify-center items-center gap-2 p-8">
+    <img
+      alt="{{ post.thumbnailUrl }}"
+      src="././assets/images/{{ post.thumbnailUrl }}.png"
+      class="max-w-2xl"
+    />
+    <p>
+      {{ post.creationDate | date : "mediumDate" }}
+    </p>
+  </div>
+  <h3 class="text-xl">{{ post.title }}</h3>
 
-<p>{{ post.body }}</p>
-<p>{{ post.creationDate | date : "mediumDate" }}</p>
+  <p class="max-w-3xl">{{ post.body }}</p>
 
-<span>
-  <div (click)="like()">likes: {{ post.likes }}</div>
-  <div>score: {{ score }}</div>
-  <div (click)="dislike()">dislikes: {{ post.dislikes }}</div>
-</span>
+  <span class="flex gap-2">
+    <div (click)="like()" class="hover:cursor-pointer">
+      likes: {{ post.likes }}
+    </div>
+    <div>score: {{ score }}</div>
+    <div (click)="dislike()" class="hover:cursor-pointer">
+      dislikes: {{ post.dislikes }}
+    </div>
+  </span>
 
-<span><app-comment [id]="numId" [post]="post"></app-comment></span>
+  <span><app-comment [id]="numId" [post]="post"></app-comment></span>
 
-<button routerLink="">back to main!</button>
+  <button routerLink="" class="bg-slate-700 p-1 rounded text-white">
+    back to main!
+  </button>
+</section>
