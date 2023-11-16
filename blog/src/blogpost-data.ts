@@ -2,7 +2,7 @@ import { Blogpost } from './blog-interface';
 
 export const Blogposts: Blogpost[] = [
   {
-    title: 'tjolahopp',
+    title: 'Velvet Echoes - "Whispers in the Abyss"',
     thumbnailUrl: 'blogPic1',
     body: '11',
     creationDate: new Date('January 3, 2020 02:45:30'),
@@ -12,7 +12,7 @@ export const Blogposts: Blogpost[] = [
     id: 1,
   },
   {
-    title: 'chibidibi',
+    title: 'Midnight Reverie - "Shadows of the Unseen"',
     thumbnailUrl: 'blogPic2',
     body: '22',
     creationDate: new Date('February 4, 2021 03:55:30'),
@@ -22,7 +22,7 @@ export const Blogposts: Blogpost[] = [
     id: 2,
   },
   {
-    title: 'tjabatjaba',
+    title: 'Urban Mirage - "Concrete Dreams"',
     thumbnailUrl: 'blogPic3',
     body: '33',
     creationDate: new Date('March 5, 2022 02:25:30'),
@@ -32,7 +32,7 @@ export const Blogposts: Blogpost[] = [
     id: 3,
   },
   {
-    title: 'Helloooo',
+    title: 'Nebula Shores - "Astral Echoes"',
     thumbnailUrl: 'blogPic4',
     body: '44',
     creationDate: new Date('April 6, 2022 06:25:30'),
@@ -42,7 +42,7 @@ export const Blogposts: Blogpost[] = [
     id: 4,
   },
   {
-    title: 'turboo',
+    title: 'Sonic Alchemy - "Ephemeral Frequencies"',
     thumbnailUrl: 'blogPic5',
     body: '55',
     creationDate: new Date('June 7, 2022 08:25:30'),
