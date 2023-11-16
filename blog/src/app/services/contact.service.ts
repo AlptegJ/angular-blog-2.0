@@ -22,7 +22,7 @@ export class ContactService {
     console.log(firstName, lastName, email, message);
   }
 
-  submitComment(comment: string, id: number, post: Blogpost) {
+  submitComment(comment: string, id: number) {
     this.PostList = this.blogpostService.allBlogposts;
     this.PostList[id - 1].comments.push(comment);
     this.storageService.setData('postKey', this.PostList);

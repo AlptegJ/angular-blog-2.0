@@ -17,4 +17,13 @@ export class StorageService {
     const data = localStorage.getItem(key);
     return data ? JSON.parse(data) : null;
   }
+
+  setProfile(key: string, data: string): void {
+    localStorage.setItem(key, JSON.stringify(data));
+  }
+
+  getProfile(key: string): string {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : null;
+  }
 }

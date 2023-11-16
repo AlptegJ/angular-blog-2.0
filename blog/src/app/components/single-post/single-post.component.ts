@@ -3,7 +3,6 @@ import { BlogpostService } from 'src/app/services/blogpost.service';
 import { Blogpost } from 'src/blog-interface';
 import { ActivatedRoute } from '@angular/router';
 import { StorageService } from 'src/app/services/storage.service';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-single-post',
@@ -25,9 +24,10 @@ export class SinglePostComponent {
     activatedRoute.params.subscribe((params) => (this.id = params['id']));
     this.post = this.blogpostService.getBlogpostById(parseInt(this.id));
     this.numId = parseInt(this.id);
+    this.updateScore();
   }
 
-  // ökar likes i posts och score (som renderas på sidan), hämtar data från localStorage, uppdaterar datan, och sparar igen
+  // ökar likes i posts (som renderas på sidan), hämtar data från localStorage, uppdaterar datan, och sparar igen
   like() {
     this.post.likes++;
     this.score++;
@@ -36,12 +36,17 @@ export class SinglePostComponent {
     this.storageService.setData('postKey', this.PostList);
   }
 
-  // ökar dislikes i posts och score (som renderas på sidan), hämtar data från localStorage, uppdaterar datan, och sparar igen
+  // ökar dislikes i posts (som renderas på sidan), hämtar data från localStorage, uppdaterar datan, och sparar igen
   dislike() {
     this.post.dislikes++;
     this.score--;
     this.PostList = this.blogpostService.allBlogposts;
     this.PostList[parseInt(this.id) - 1].dislikes = this.post.dislikes;
     this.storageService.setData('postKey', this.PostList);
+  }
+
+  // uppdaterar score.
+  updateScore() {
+    this.score = this.post.likes - this.post.dislikes;
   }
 }

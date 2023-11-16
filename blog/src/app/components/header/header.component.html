@@ -1,10 +1,9 @@
 <nav class="navbar">
   <button type="button" routerLink="">Huvudsidan</button>
   <button type="button" routerLink="/about">omMig</button>
-  <button type="button">byt Användare</button>
-  <button type="button" (click)="get()">log getdata</button>
+  <button type="button" routerLink="/user">byt Användare</button>
 
-  <button *ngIf="user === 'admin'" type="button" routerLink="/new-post">
+  <button *ngIf="profile === 'Admin'" type="button" routerLink="/new-post">
     skapa nytt inlägg
   </button>
 </nav>

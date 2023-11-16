@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { Blogpost } from 'src/blog-interface';
 import { StorageService } from './storage.service';
 import { Blogposts } from 'src/blogpost-data';
+import { BlogpostClass } from '../blogpost-class';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BlogpostService {
   PostList: Blogpost[] = [];
-  newPost!: Blogpost;
   constructor(private storageService: StorageService) {}
 
   allBlogposts: Blogpost[] = this.storageService.getData('postKey');
@@ -31,25 +31,23 @@ export class BlogpostService {
     comments: string[],
     id: number
   ) {
-    // this.PostList = this.allBlogposts;
-    // this.newPost.title = title;
-    // this.newPost.body = body;
-    // this.newPost.thumbnailUrl = thumbnailUrl;
-    // this.newPost.creationDate = creationDate;
-    // this.newPost.likes = likes;
-    // this.newPost.dislikes = dislikes;
-    // this.newPost.comments = comments;
-    // this.newPost.id = id;
-    // this.PostList.push(this.newPost);
-    console.log(
+    let newBlogPost = new BlogpostClass(
       title,
-      body,
       thumbnailUrl,
+      body,
       creationDate,
       likes,
       dislikes,
       comments,
       id
     );
+
+    this.storeNewPost(newBlogPost);
+  }
+
+  storeNewPost(post: Blogpost) {
+    this.PostList = this.allBlogposts;
+    this.PostList.push(post);
+    this.storageService.setData('postKey', this.PostList);
   }
 }

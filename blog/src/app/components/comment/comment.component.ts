@@ -22,8 +22,7 @@ export class CommentComponent {
   submitComment() {
     this.contactService.submitComment(
       this.commentForm.value.comment ?? '',
-      this.id,
-      this.post
+      this.id
     );
 
     this.commentForm.reset();

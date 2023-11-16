@@ -19,6 +19,8 @@ import { SinglePostViewComponent } from './view/single-post-view/single-post-vie
 import { CommentComponent } from './components/comment/comment.component';
 import { NewPostComponent } from './components/new-post/new-post.component';
 import { NewPostViewComponent } from './view/new-post-view/new-post-view.component';
+import { UserViewComponent } from './view/user-view/user-view.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { NewPostViewComponent } from './view/new-post-view/new-post-view.compone
     CommentComponent,
     NewPostComponent,
     NewPostViewComponent,
+    UserViewComponent,
+    UserComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],

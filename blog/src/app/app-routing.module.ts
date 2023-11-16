@@ -5,6 +5,7 @@ import { AboutViewComponent } from './view/about-view/about-view.component';
 import { ContactViewComponent } from './view/contact-view/contact-view.component';
 import { SinglePostViewComponent } from './view/single-post-view/single-post-view.component';
 import { NewPostViewComponent } from './view/new-post-view/new-post-view.component';
+import { UserViewComponent } from './view/user-view/user-view.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'new-post',
     component: NewPostViewComponent,
+  },
+  {
+    path: 'user',
+    component: UserViewComponent,
   },
 ];
 

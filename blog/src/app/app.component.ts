@@ -13,5 +13,6 @@ export class AppComponent {
 
   ngOnInit() {
     this.storageService.setData('postKey', Blogposts);
+    this.storageService.setProfile('profileKey', 'Admin');
   }
 }

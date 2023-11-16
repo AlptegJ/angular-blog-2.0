@@ -8,15 +8,16 @@ import { StorageService } from 'src/app/services/storage.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  user: string = 'admin';
+  profile: string = '';
 
   constructor(
     private storageService: StorageService,
     private blogpostService: BlogpostService
-  ) {}
+  ) {
+    this.currentProfile();
+  }
 
-  get() {
-    console.log(this.storageService.getData('postKey'));
-    console.log(this.blogpostService.allBlogposts);
+  currentProfile() {
+    this.profile = this.storageService.getProfile('profileKey');
   }
 }
