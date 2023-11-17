@@ -1,13 +1,19 @@
 <ul>
-  <li *ngFor="let blogpost of blogposts" class="blog-post">
-    <h3>{{ blogpost.title }}</h3>
-    <img
-      alt="{{ blogpost.thumbnailUrl }}"
-      src="././assets/images/{{ blogpost.thumbnailUrl }}.png"
-    />
-    <p>{{ blogpost.creationDate | date : "mediumDate" }}</p>
-    <button [routerLink]="['/singlepost', blogpost.id]">
-      Read more... {{ blogpost.id }}
-    </button>
+  <li *ngFor="let blogpost of blogposts" class="flex flex-col bg-thirdTan">
+    <div class="flex flex-col justify-center items-center gap-2 p-8">
+      <h3 class="text-2xl font-semibold">{{ blogpost.title }}</h3>
+      <img
+        alt="{{ blogpost.thumbnailUrl }}"
+        src="{{ blogpost.thumbnailUrl }}"
+        class="max-w-2xl rounded-md"
+      />
+      <p>{{ blogpost.creationDate | date : "mediumDate" }}</p>
+      <button
+        [routerLink]="['/singlepost', blogpost.id]"
+        class="text-secondOrange"
+      >
+        Read more...
+      </button>
+    </div>
   </li>
 </ul>

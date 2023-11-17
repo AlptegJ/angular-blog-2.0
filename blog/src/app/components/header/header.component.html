@@ -1,9 +1,32 @@
-<nav class="navbar bg-gray-700">
-  <button type="button" routerLink="">Huvudsidan</button>
-  <button type="button" routerLink="/about">omMig</button>
-  <button type="button" routerLink="/user">byt Användare</button>
+<nav class="flex justify-around h-12 bg-thirdTan">
+  <button
+    type="button"
+    routerLink=""
+    class="text-firstBlack text-xl hover:underline hover:underline-offset-4 active:underline-offset-1 active:underline"
+  >
+    MAIN
+  </button>
+  <button
+    type="button"
+    routerLink="/about"
+    class="text-firstBlack text-xl hover:underline hover:underline-offset-4 active:underline-offset-1 active:underline"
+  >
+    ABOUT
+  </button>
+  <button
+    type="button"
+    routerLink="/user"
+    class="text-firstBlack text-xl hover:underline hover:underline-offset-4 active:underline-offset-1 active:underline"
+  >
+    USERS
+  </button>
 
-  <button *ngIf="profile === 'Admin'" type="button" routerLink="/new-post">
-    skapa nytt inlägg
+  <button
+    *ngIf="profile === 'Admin'"
+    type="button"
+    routerLink="/new-post"
+    class="text-firstBlack text-xl hover:underline hover:underline-offset-4 active:underline-offset-1 active:underline"
+  >
+    NEW POST
   </button>
 </nav>

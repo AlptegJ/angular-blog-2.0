@@ -1,7 +1,27 @@
-<h1>PICK YOUR FIGHTER</h1>
-<section>
-  <button (click)="setUser()">USER</button>
-</section>
-<section>
-  <button (click)="setAdmin()">ADMIN</button>
-</section>
+<div class="h-screen bg-thirdTan">
+  <div class="flex justify-center items-center h-1/6 text-4xl">
+    <h1>CHOOSE YOUR FIGHTER</h1>
+  </div>
+  <div class="flex h-4/6">
+    <section
+      class="w-1/2 flex justify-center items-center text-3xl font-bold bg-firstBlack text-secondOrange"
+    >
+      <button
+        (click)="setUser()"
+        class="border-solid border-4 p-5 w-48 active:p-6"
+      >
+        USER
+      </button>
+    </section>
+    <section
+      class="w-1/2 flex justify-center items-center text-3xl font-bold text-firstBlack bg-secondOrange"
+    >
+      <button
+        (click)="setAdmin()"
+        class="border-solid border-4 p-5 w-48 active:p-6"
+      >
+        ADMIN
+      </button>
+    </section>
+  </div>
+</div>

@@ -3,7 +3,7 @@ import { Blogpost } from './blog-interface';
 export const Blogposts: Blogpost[] = [
   {
     title: 'Velvet Echoes - "Whispers in the Abyss"',
-    thumbnailUrl: 'blogPic1',
+    thumbnailUrl: '././assets/images/blogPic1.png',
     body: "`Whispers in the Abyss by Velvet Echoes is a mesmerizing journey into the depths of indie rock, where haunting melodies and introspective lyrics intertwine seamlessly. The album's ethereal soundscapes, coupled with the lead singer's evocative vocals, create an atmosphere that is both melancholic and uplifting. Tracks like 'Lost Horizons' and 'Fading Echoes' showcase the band's ability to craft intricate musical arrangements that linger in the listener's mind. The album's lyrical themes delve into the complexities of human emotions, exploring the subtle nuances of love, loss, and self-discovery. Velvet Echoes succeeds in delivering a debut album that not only captivates with its sonic beauty but also resonates on a profound emotional level.",
     creationDate: new Date('January 3, 2020 02:45:30'),
     likes: 0,
@@ -13,8 +13,8 @@ export const Blogposts: Blogpost[] = [
   },
   {
     title: 'Midnight Reverie - "Shadows of the Unseen"',
-    thumbnailUrl: 'blogPic2',
-    body: '22',
+    thumbnailUrl: '././assets/images/blogPic2.png',
+    body: "With Shadows of the Unseen, Midnight Reverie offers a sonic tapestry that weaves together elements of indie rock and dream pop. The album is a nocturnal journey, filled with atmospheric guitar riffs and dreamy synthesizers. Tracks like 'Veil of Moonlight' and 'Echoes in the Dark' transport the listener to a mysterious realm where the boundaries between reality and imagination blur. The band's ethereal sound is complemented by introspective and poetic lyrics, creating a captivating listening experience. Shadows of the Unseen is a testament to Midnight Reverie's ability to craft music that is both atmospheric and emotionally resonant, making it a standout debut in the indie rock scene.",
     creationDate: new Date('February 4, 2021 03:55:30'),
     likes: 0,
     dislikes: 0,
@@ -23,8 +23,8 @@ export const Blogposts: Blogpost[] = [
   },
   {
     title: 'Urban Mirage - "Concrete Dreams"',
-    thumbnailUrl: 'blogPic3',
-    body: '33',
+    thumbnailUrl: '././assets/images/blogPic3.png',
+    body: "Urban Mirage's debut album, Concrete Dreams, is a gritty and authentic exploration of urban life and the human experience. The band's raw and unapologetic sound, showcased in tracks like 'Cityscape Serenade' and 'Concrete Jungle,' captures the essence of the modern metropolis. The album's lyrics delve into the complexities of city living, addressing themes of isolation, connection, and the constant flux of urban landscapes. Urban Mirage's bold and energetic approach to indie rock sets them apart, making Concrete Dreams a compelling debut that reflects the pulse of city life with unfiltered honesty.",
     creationDate: new Date('March 5, 2022 02:25:30'),
     likes: 0,
     dislikes: 0,
@@ -33,8 +33,8 @@ export const Blogposts: Blogpost[] = [
   },
   {
     title: 'Nebula Shores - "Astral Echoes"',
-    thumbnailUrl: 'blogPic4',
-    body: '44',
+    thumbnailUrl: '././assets/images/blogPic4.png',
+    body: "Nebula Shores' Astral Echoes takes listeners on a cosmic journey through a fusion of indie rock and psychedelic sounds. The album's dreamy guitar riffs and spacey synths create a celestial atmosphere, evident in tracks like 'Galactic Drift' and 'Stellar Reverie.' The band's ability to blend otherworldly instrumentals with introspective lyrics results in a unique and immersive listening experience. Astral Echoes establishes Nebula Shores as pioneers in the indie rock space, offering a sonic exploration of the vastness of the universe and the inner landscapes of the mind.",
     creationDate: new Date('April 6, 2022 06:25:30'),
     likes: 0,
     dislikes: 0,
@@ -43,8 +43,8 @@ export const Blogposts: Blogpost[] = [
   },
   {
     title: 'Sonic Alchemy - "Ephemeral Frequencies"',
-    thumbnailUrl: 'blogPic5',
-    body: '55',
+    thumbnailUrl: '././assets/images/blogPic5.png',
+    body: "Sonic Alchemy's debut album, Ephemeral Frequencies, is a sonic kaleidoscope that pushes the boundaries of indie rock. The band's experimental approach, showcased in tracks like 'Transient Harmonies' and 'Molecular Resonance,' results in a mesmerizing blend of unconventional rhythms and eclectic instrumentals. The album's title perfectly encapsulates the ephemeral nature of the musical landscapes crafted by Sonic Alchemy. With each track, the band invites listeners to explore a sonic realm where boundaries are shattered, and conventional structures are redefined. Ephemeral Frequencies stands as a testament to Sonic Alchemy's commitment to pushing the envelope in indie rock, offering a thought-provoking and immersive debut.",
     creationDate: new Date('June 7, 2022 08:25:30'),
     likes: 0,
     dislikes: 0,

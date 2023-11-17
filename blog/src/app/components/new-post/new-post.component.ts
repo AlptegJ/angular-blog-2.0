@@ -27,5 +27,7 @@ export class NewPostComponent {
       [],
       this.blogpostService.allBlogposts.length + 1
     );
+
+    this.newPostForm.reset();
   }
 }

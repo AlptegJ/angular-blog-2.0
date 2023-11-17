@@ -9,7 +9,6 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { LoginComponent } from './components/login/login.component';
 import { PostlistComponent } from './components/postlist/postlist.component';
 import { SinglePostComponent } from './components/single-post/single-post.component';
 import { AboutViewComponent } from './view/about-view/about-view.component';
@@ -29,7 +28,6 @@ import { UserComponent } from './components/user/user.component';
     ContactComponent,
     FooterComponent,
     HeaderComponent,
-    LoginComponent,
     PostlistComponent,
     SinglePostComponent,
     AboutViewComponent,
