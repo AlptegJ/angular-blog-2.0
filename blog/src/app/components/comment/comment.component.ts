@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ContactService } from 'src/app/services/contact.service';
 import { Blogpost } from 'src/blog-interface';
 
@@ -19,6 +19,7 @@ export class CommentComponent {
 
   constructor(private contactService: ContactService) {}
 
+  //sends value of inupt to contactService
   submitComment() {
     this.contactService.submitComment(
       this.commentForm.value.comment ?? '',

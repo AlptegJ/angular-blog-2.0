@@ -1,15 +1,13 @@
-import { Blogpost } from 'src/blog-interface';
-
 export class BlogpostClass {
   //Properties
-  title: string;
-  thumbnailUrl: string;
-  body: string;
-  creationDate: Date;
-  likes: number;
-  dislikes: number;
-  comments: string[];
-  id: number;
+  public title: string;
+  public thumbnailUrl: string;
+  public body: string;
+  public creationDate: Date;
+  public likes: number;
+  public dislikes: number;
+  public comments: string[];
+  public id: number;
 
   //Constructor
   constructor(
@@ -32,6 +30,7 @@ export class BlogpostClass {
     this.id = id;
   }
 
+  //method
   getNewObject(): string {
     return `${this.title} 
     ${this.body} 

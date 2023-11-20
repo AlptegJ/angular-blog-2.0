@@ -13,7 +13,7 @@ export class ContactService {
     private storageService: StorageService
   ) {}
 
-  submitMessage(
+  public submitMessage(
     firstName: string,
     lastName: string,
     email: string,
@@ -22,9 +22,10 @@ export class ContactService {
     console.log(firstName, lastName, email, message);
   }
 
-  submitComment(comment: string, id: number) {
+  public submitComment(comment: string, id: number) {
     this.PostList = this.blogpostService.allBlogposts;
     this.PostList[id - 1].comments.push(comment);
+    console.log(comment);
     this.storageService.setData('postKey', this.PostList);
   }
 }

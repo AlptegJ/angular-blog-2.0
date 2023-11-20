@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ContactService } from 'src/app/services/contact.service';
 
 @Component({
@@ -17,6 +17,7 @@ export class ContactComponent {
 
   constructor(private contactService: ContactService) {}
 
+  //sends value of inupt to contactService
   submitMessage() {
     this.contactService.submitMessage(
       this.contactForm.value.firstName ?? '',

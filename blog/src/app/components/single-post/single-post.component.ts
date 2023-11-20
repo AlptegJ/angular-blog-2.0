@@ -27,7 +27,7 @@ export class SinglePostComponent {
     this.updateScore();
   }
 
-  // ökar likes i posts (som renderas på sidan), hämtar data från localStorage, uppdaterar datan, och sparar igen
+  // + likes in posts (reders on page), get data from localStorage, updates data, saves to localStorage.
   like() {
     this.post.likes++;
     this.score++;
@@ -36,7 +36,7 @@ export class SinglePostComponent {
     this.storageService.setData('postKey', this.PostList);
   }
 
-  // ökar dislikes i posts (som renderas på sidan), hämtar data från localStorage, uppdaterar datan, och sparar igen
+  // - likes in posts (reders on page), get data from localStorage, updates data, saves to localStorage.
   dislike() {
     this.post.dislikes++;
     this.score--;
@@ -45,7 +45,7 @@ export class SinglePostComponent {
     this.storageService.setData('postKey', this.PostList);
   }
 
-  // uppdaterar score.
+  // updates score.
   updateScore() {
     this.score = this.post.likes - this.post.dislikes;
   }

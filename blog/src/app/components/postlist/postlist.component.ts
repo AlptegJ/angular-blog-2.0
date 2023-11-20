@@ -18,8 +18,4 @@ export class PostlistComponent {
       this.blogposts = Blogposts;
     }
   }
-
-  toString(key: number): string {
-    return JSON.stringify(key);
-  }
 }

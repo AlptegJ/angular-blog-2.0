@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Blogpost } from 'src/blog-interface';
 import { StorageService } from './storage.service';
-import { Blogposts } from 'src/blogpost-data';
 import { BlogpostClass } from '../blogpost-class';
 
 @Injectable({
@@ -13,15 +12,15 @@ export class BlogpostService {
 
   allBlogposts: Blogpost[] = this.storageService.getData('postKey');
 
-  getBlogpostById(id: number): any {
+  public getBlogpostById(id: number): any {
     return this.allBlogposts.find((blogpost) => blogpost.id === id);
   }
 
-  getAllBlogposts(key: string): Blogpost[] {
+  public getAllBlogposts(key: string): Blogpost[] {
     return this.storageService.getData(key);
   }
 
-  submitPost(
+  public submitPost(
     title: string,
     thumbnailUrl: string,
     body: string,
@@ -45,7 +44,7 @@ export class BlogpostService {
     this.storeNewPost(newBlogPost);
   }
 
-  storeNewPost(post: Blogpost) {
+  public storeNewPost(post: Blogpost) {
     this.PostList = this.allBlogposts;
     this.PostList.push(post);
     this.storageService.setData('postKey', this.PostList);

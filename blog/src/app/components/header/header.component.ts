@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { BlogpostService } from 'src/app/services/blogpost.service';
 import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
@@ -8,15 +7,13 @@ import { StorageService } from 'src/app/services/storage.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  profile: string = '';
+  public profile: string = '';
 
-  constructor(
-    private storageService: StorageService,
-    private blogpostService: BlogpostService
-  ) {
+  constructor(private storageService: StorageService) {
     this.currentProfile();
   }
 
+  //gets currentProfile from localStorage
   currentProfile() {
     this.profile = this.storageService.getProfile('profileKey');
   }

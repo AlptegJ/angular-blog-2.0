@@ -12,7 +12,12 @@ export class AppComponent {
   constructor(private storageService: StorageService) {}
 
   ngOnInit() {
-    this.storageService.setData('postKey', Blogposts);
-    this.storageService.setProfile('profileKey', 'Admin');
+    if (this.storageService.getData('postKey') === null) {
+      this.storageService.setData('postKey', Blogposts);
+    }
+
+    if (this.storageService.getProfile('profileKey') === null) {
+      this.storageService.setProfile('profileKey', 'Admin');
+    }
   }
 }
