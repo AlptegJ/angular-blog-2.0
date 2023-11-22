@@ -16,6 +16,7 @@ export class NewPostComponent {
 
   constructor(private blogpostService: BlogpostService) {}
 
+  //sends value of inupt to BlogpostService
   submitPost() {
     this.blogpostService.submitPost(
       this.newPostForm.value.title ?? '',

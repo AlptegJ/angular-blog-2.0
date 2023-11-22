@@ -1,9 +1,9 @@
-<section class="flex flex-col justify-center h-screen bg-thirdTan">
+<section class="flex flex-col justify-center items-center h-screen bg-thirdTan">
   <h1 class="text-5xl ml-20">create a new post</h1>
   <form
     [formGroup]="newPostForm"
     (submit)="submitPost()"
-    class="flex flex-col justify-center gap-5 p-20"
+    class="flex flex-col justify-center gap-5 p-20 min-w-[50%] max-w-5xl"
   >
     <label for="title" class="font-semibold">Title</label>
     <input

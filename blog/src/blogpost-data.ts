@@ -1,5 +1,6 @@
 import { Blogpost } from './blog-interface';
 
+// template data
 export const Blogposts: Blogpost[] = [
   {
     title: 'Velvet Echoes - "Whispers in the Abyss"',

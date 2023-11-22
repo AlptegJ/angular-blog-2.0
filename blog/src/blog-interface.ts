@@ -1,3 +1,5 @@
+//interface for template data
+
 export interface Blogpost {
   title: string;
   thumbnailUrl: string;

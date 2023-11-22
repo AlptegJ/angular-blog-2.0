@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'blog';
   constructor(private storageService: StorageService) {}
 
+  // if localStorage is empty, load template data, else do nothing.
   ngOnInit() {
     if (this.storageService.getData('postKey') === null) {
       this.storageService.setData('postKey', Blogposts);
